@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Navigation Section */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px 10px;
+}
+
+
+
+#index-nav {
+    background-color: maroon;
+}
+
+#experience-nav {
+    background-color: mediumaquamarine;
+}
+
+/* End Navigation Section */
