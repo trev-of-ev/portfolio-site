@@ -28,15 +28,31 @@ nav a {
 
 
 
-#index-nav {
+nav {
     background-color: maroon;
 }
 
-#experience-nav {
-    background-color: mediumaquamarine;
+/* End Navigation Section */
+
+/* Home Section */
+
+#homepage {
+    text-align: center;
 }
 
-/* End Navigation Section */
+.home p {
+    text-align: center;
+    padding: 0px 125px;
+}
+
+#featured-projects ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
 
 /* Work Section */
 
