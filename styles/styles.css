@@ -1,3 +1,8 @@
+/* Color Scheme */
+941b0c Dark Red
+621708 Blood Red
+220091 Dark Sienna
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
@@ -12,10 +17,27 @@ img {
 }
 
 /* Navigation Section */
+.navbar-nav {
+    margin-left: 33%;
+}
 
+.navbar-social {
+    margin-left: 33%;
+}
 
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
 
-@keyframes slidein {
+/* Jumbotron Section */
+.jumbotron {
+    /* background:linear-gradient(180deg, rgba(59, 35, 93, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(../images/jumbtron-bg.jpg); */
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.7) 100% , rgba(255, 255, 255, 0.7) 100%), url(../images/jumbtron-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* @keyframes slidein {
     from {
        opacity: 0; 
        background: red;
@@ -25,7 +47,7 @@ img {
        opacity: 1;
        background: purple;
      }
-   }
+   } */
 
 nav ul {
     list-style-type: none;
@@ -52,7 +74,7 @@ nav {
     animation-duration: 6s;
     animation-iteration-count: 2;
     animation-direction: reverse; */
-    background-color: purple;
+    background-color: #3c1414;
 }
 
 /* End Navigation Section */

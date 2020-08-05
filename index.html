@@ -3,44 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links for Bootstrap, styles, and fonts -->
+    <link rel="stylesheet" href="styles\all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles\styles.css">
+
     <title>Trevor's Portfolio Site</title>
 </head>
 <body>
-    <nav id="index-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Trevor Guinn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="work.html">My Work</a>
+            </li>
         </ul>
+        <ul class="navbar-social">
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        </div>
     </nav>
-    <main id="homepage">
-        <h1>Welcome to My Page</h1>
-        <section class="home experience">
-            <h2>Early Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Enim nec dui nunc mattis enim ut tellus elementum. Ac tincidunt vitae semper quis lectus nulla at volutpat diam.</p>
-            <a href="">Learn More</a>
-        </section>
-        <section class="home work">
-            <h2>This is what I'm working on...</h2>
-            <div id="featured-projects">
-                <ul>
-                    <li><img style="width: 72px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/nintendo/nintendo-2018.jpg" alt=""></li>
-                    <li><img style="width: 60px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/napster/napster-2001.png" alt=""></li>
-                    <li><img style="width: 60px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/spacex/spacex-2002.png" alt=""></li>
-                </ul>
-            </div>
-            <a href="">More Projects</a>
-        </section>
-        <section class="home about">
-            <h2>Who am I?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet tellus cras adipiscing enim eu turpis egestas. Sagittis eu volutpat odio facilisis. Sit amet justo donec enim diam. Tortor condimentum lacinia quis vel eros.</p>
-            <a href="">About Me</a>
-        </section>
-    </main>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+    <div class="container">
+        <main id="homepage">
+            <svg width="120" height="120" viewBox="0 0 120 120"
+            xmlns="svgs\brands\airbnb.svg">
+
+                <polygon points="60,30 90,90 30,90">
+                    <animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 60 70"
+                          to="360 60 70"
+                          dur="10s"
+                          repeatCount="indefinite"/>
+                </polygon>
+            </svg>
+
+            <h1>Welcome to My Page</h1>
+            <section class="home experience">
+                <h2>Early Work</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Enim nec dui nunc mattis enim ut tellus elementum. Ac tincidunt vitae semper quis lectus nulla at volutpat diam.</p>
+                <a href="">Learn More</a>
+            </section>
+            <section class="home work">
+                <h2>This is what I'm working on...</h2>
+                <div id="featured-projects">
+                    <ul>
+                        <li><img style="width: 72px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/nintendo/nintendo-2018.jpg" alt=""></li>
+                        <li><img style="width: 60px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/napster/napster-2001.png" alt=""></li>
+                        <li><img style="width: 60px; height: 72px;" src="https://www.webdesignmuseum.org/uploaded/timeline/spacex/spacex-2002.png" alt=""></li>
+                    </ul>
+                </div>
+                <a href="">More Projects</a>
+            </section>
+            <section class="home about">
+                <h2>Who am I?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet tellus cras adipiscing enim eu turpis egestas. Sagittis eu volutpat odio facilisis. Sit amet justo donec enim diam. Tortor condimentum lacinia quis vel eros.</p>
+                <a href="">About Me</a>
+            </section>
+        </main>
+      </div>
+    
     <footer>
         <h3>Get in touch</h3>
         <ul>
@@ -49,5 +96,9 @@
             <li>Greater Middle Tennessee Area</li>
         </ul>
     </footer>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
